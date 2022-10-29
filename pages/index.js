@@ -1,7 +1,7 @@
 import Header from "../common/Header";
 import Home from "../components/Home";
 
-export default () => {
+export default function App() {
   return (
     <>
       <Header />

@@ -46,8 +46,8 @@ export default function Opportunity() {
       <div className="flex items-center justify-center">
         <div className="w-full md:w-10/12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
-            {opportunities.map((opportunity) => {
-              return <Card data={opportunity} />;
+            {opportunities.map((opportunity, idx) => {
+              return <Card key={`opportunity-${idx}`} data={opportunity} />;
             })}
           </div>
         </div>

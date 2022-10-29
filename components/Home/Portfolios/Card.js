@@ -25,8 +25,8 @@ export default function Card({
           className="p-5 grid grid-cols-2 md:grid-cols-3 gap-5"
           style={{ backgroundColor: "#F2F2F2" }}
         >
-          {data.companies.map((company) => {
-            return <img className="w-30 h-30" src={`/images/${company}`} />;
+          {data.companies.map((company, idx) => {
+            return <img key={`company-${idx}`} className="w-30 h-30" src={`/images/${company}`} />;
           })}
         </div>
       ) : null}

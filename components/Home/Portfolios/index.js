@@ -49,6 +49,7 @@ export default function Portfolios() {
         {portfolios.map((portfolio, idx) => {
           return (
             <Card
+              key={`portfoli-sm-${idx}`}
               data={portfolio}
               idx={idx}
               activeIndex={activeIndex}
@@ -62,7 +63,14 @@ export default function Portfolios() {
       <div className="hidden md:block">
         <div className="grid grid-rows-4 grid-flow-col gap-4">
           {portfolios.map((portfolio, idx) => {
-            return <Card data={portfolio} idx={idx} mediumDevice={true} />;
+            return (
+              <Card
+                key={`porfolio-${idx}`}
+                data={portfolio}
+                idx={idx}
+                mediumDevice={true}
+              />
+            );
           })}
         </div>
       </div>
