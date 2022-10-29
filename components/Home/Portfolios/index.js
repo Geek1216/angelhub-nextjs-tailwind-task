@@ -45,7 +45,7 @@ export default function Portfolios() {
   return (
     <div className="flex flex-col space-y-10">
       <SectionTitle title="Successful Portfolio Companies" />
-      <div class="grid md:grid-rows-4 md:grid-flow-col md:gap-4 block md:hidden">
+      <div className="grid md:grid-rows-4 md:grid-flow-col md:gap-4 block md:hidden">
         {portfolios.map((portfolio, idx) => {
           return (
             <Card
@@ -60,7 +60,7 @@ export default function Portfolios() {
         })}
       </div>
       <div className="hidden md:block">
-        <div class="grid grid-rows-4 grid-flow-col gap-4">
+        <div className="grid grid-rows-4 grid-flow-col gap-4">
           {portfolios.map((portfolio, idx) => {
             return <Card data={portfolio} idx={idx} mediumDevice={true} />;
           })}

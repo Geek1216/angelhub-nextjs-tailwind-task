@@ -1,17 +1,11 @@
 import Header from "../common/Header";
-import Portfolios from "../components/Home/Portfolios";
-import Opportunity from "../components/Home/Opportunity";
+import Home from "../components/Home";
 
-export default function Home() {
+export default () => {
   return (
     <>
       <Header />
-      <div class="container mx-auto font-poppins p-5">
-        <div className="flex flex-col space-y-28">
-          <Opportunity />
-          <Portfolios />
-        </div>
-      </div>
+      <Home />
     </>
   );
-}
+};
